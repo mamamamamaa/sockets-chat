@@ -22,7 +22,7 @@ mongoose.connect(HOST, () => console.log("BD is connect!!!"));
 const http = require("http").Server(app);
 
 const socket = require("socket.io")(http, {
-  cors: { origin: "http://localhost:3000" },
+  cors: { origin: "https://socket-chat-vpu4.onrender.com" },
 });
 
 socket.on("connection", async (client) => {

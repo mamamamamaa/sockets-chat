@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import { useEffect, useState } from "react";
 
 const socket = {
-  current: io("http://localhost:3001"),
+  current: io("https://socket-chat-vpu4.onrender.com"),
 };
 
 export const Chat = () => {
