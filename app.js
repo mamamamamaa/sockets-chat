@@ -11,7 +11,7 @@ const { HOST, PORT } = process.env;
 global.onlineUsers = new Map();
 
 app.use(cors());
-app.use(
+app.get(
   "/",
   express.static(path.join(__dirname, "./frontend/build/index.html"))
 );
